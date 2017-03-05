@@ -1,0 +1,19 @@
+group 'RuleBookExperimentation'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'org.slf4j:slf4j-log4j12:1.7.5'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.deliveredtechnologies:rulebook:0.2'
+    compileOnly "org.projectlombok:lombok:1.16.14"
+}
